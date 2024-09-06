@@ -1,0 +1,11 @@
+retry
+sentencepiece
+transformers
+sentence-transformers
+accelerate
+huggingface-hub
+langchain
+langchain-core
+langchain-community
+langchain-huggingface
+streamlit
