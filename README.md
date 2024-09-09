@@ -20,21 +20,21 @@ EXPRESSION_FILE is the mounting point, we copy this file into the container.
 
 ### Set the variables
 #### Linux
-`export OPENAI_API_KEY=your_api_key`
+`export HUGGINGFACEHUB_API_TOKEN=your_api_token`
 
 `export EXPRESSION_FILE=/path/to/expression_file.json`
 
 #### Windows
-`setx OPENAI_API_KEY "your_api_key"`
+`setx HUGGINGFACEHUB_API_TOKEN "your_api_token"`
 
 `setx EXPRESSION_FILE "path_to_your_expression_file"`
 
 ### Run the docker:
 
 #### Linux
-`docker run -p 8501:8501 -e OPENAI_API_KEY -v $EXPRESSION_FILE:/app/class_expression.json finapolat/xce-streamlit_v3:enexa`
+`docker run -p 8501:8501 -e HUGGINGFACEHUB_API_TOKEN -v $EXPRESSION_FILE:/app/class_expression.json finapolat/xce-streamlit_v3:enexa`
 
 #### Windows
-`docker run -p 8501:8501 -e OPENAI_API_KEY -v %EXPRESSION_FILE%:/app/class_expression.json finapolat/xce-streamlit_v3:enexa`
+`docker run -p 8501:8501 -e HUGGINGFACEHUB_API_TOKEN -v %EXPRESSION_FILE%:/app/class_expression.json finapolat/xce-streamlit_v3:enexa`
 
 To view the app, please browse to http://localhost:8501
